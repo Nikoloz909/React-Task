@@ -26,6 +26,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+  background-color: #343a40;
 }
 ol, ul {
 	list-style: none;
@@ -46,8 +47,10 @@ a{
   text-decoration: none;
   color: inherit;
 }
-body{
-  background-color: #343a40;
+input,button{
+  border: 0;
+  outline: none;
+
 }
 /* reset css */
 
@@ -58,7 +61,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1150px;
+  max-width: 850px;
   width: 100%;
   margin: 0 auto;
 }
@@ -77,14 +80,24 @@ body{
   margin-right: 40px;
   
 }
-
+.comments-Parent{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.comments-user{
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: aliceblue;
+}
 .childe-div{
   border: 1px solid black;
-  height: 500px;
+  max-height: 500px;
   overflow: hidden;
   overflow-y: scroll;
-  margin: 50px 0;
+  margin: 30px 0;
   background-color: #211E2F;
+  
   
 }
 .comments-title{
@@ -98,12 +111,51 @@ body{
   color: aliceblue;
   text-indent: 15px;
   font-size: 13px;
+  transition: all  0.02s linear 0.02s;
   
 }
 .comments-title:hover{
   background-color: #343a40;
-  transition: all  0.01s linear 0.01s;
+  transition: all  0.02s linear 0.02s;
+}
+.comments-form{
+  max-width: 550px;
+  width: 100%;
+  margin: 0 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
-
-
+.comments-input{
+  width: 78%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: transparent;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+  color: aliceblue;
+  text-indent: 15px;
+  transition: all  0.02s linear 0.02s;
+}
+.comments-input:hover{
+  background-color: #343a40;
+  transition: all  0.02s linear 0.02s;
+}
+.comments-btn{
+  max-width: 100px;
+  width: 100%;
+  padding: 5px;
+  background: transparent;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: aliceblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 11px;
+  transition: all  0.02s linear 0.02s;
+}
+.comments-btn:hover{
+  background-color: #343a40;
+  transition: all  0.02s linear 0.02s;
+}

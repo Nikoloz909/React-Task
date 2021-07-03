@@ -15,6 +15,7 @@ export default function Comments() {
         .catch(error => console.log(error))
     },)
     let newInput = {id:Date.now() , text: Value  }
+
     function onSubmit(e){
         e.preventDefault()
         setComments([
@@ -25,14 +26,14 @@ export default function Comments() {
         setValue('');
         setEditingText(Value)
     }
-    
+   
     useEffect(()=>{
         referenc.current.focus()
     },[])
     function onClick(id){
         let edit =[ ...Comments].map(items =>{
-            if(items.title === id){
-                items.title = EditingText;
+            if(items.id === id){
+                items.id = EditingText;
             }
             return items;
             
@@ -81,7 +82,7 @@ export default function Comments() {
                     }
                 </ul>
                 
-                
+               
            </div>
            
         </div>

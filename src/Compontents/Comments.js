@@ -57,11 +57,12 @@ export default function Comments() {
                     <button className='comments-btn'>add comments</button>
                     {
                         !!EditingText && <div><input 
+                        className='second-input'
                         type='text' 
                         onChange={e => setEditingText(e.target.value)}
                         value={EditingText}
                         />
-                        <button onClick={()=>{
+                        <button className='second-button' onClick={()=>{
                             onClick(Comments.title)
                         }}>Edit Text</button>
                         </div>

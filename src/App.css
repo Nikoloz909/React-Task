@@ -127,7 +127,7 @@ input,button{
   justify-content: space-between;
 }
 
-.comments-input{
+.comments-input,.second-input{
   width: 78%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background: transparent;
@@ -142,7 +142,7 @@ input,button{
   background-color: #343a40;
   transition: all  0.02s linear 0.02s;
 }
-.comments-btn{
+.comments-btn,.second-button{
   max-width: 100px;
   width: 100%;
   padding: 5px;
